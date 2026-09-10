@@ -104,3 +104,8 @@ else:
         HTTPServer(("0.0.0.0", port), Handler).serve_forever()
     if __name__ == "__main__":
         run_stdlib(int(os.getenv("PORT","8001")))
+
+# --- MIU V202 Ki — stdlib-flex ---
+# añade dentro de do_GET, antes del else 404:
+# elif self.path.startswith("/api/ki"):
+# parse_qs -> Df, l_corr, l0 -> Ki = 0.618*(Df/2.5)*(l_corr/l0)
