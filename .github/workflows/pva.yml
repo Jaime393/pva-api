@@ -1,9 +1,9 @@
-name: PVA api
+name: PVA api flex
 on: [push]
 jobs:
   pva:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install fastapi==0.95.1 uvicorn==0.22.0 python-multipart==0.0.6 pydantic==1.10.13 requests
+      - run: pip install requests
       - run: python -m py_compile app.py
