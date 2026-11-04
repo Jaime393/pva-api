@@ -1,3 +1,1 @@
-# flexible — sin pydantic obligatorio — funciona en Termux py3.14
-requests
-# opcional solo py<3.14: fastapi==0.95.1 uvicorn==0.22.0 python-multipart==0.0.6 pydantic==1.10.13
+# Standard library only.

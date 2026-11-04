@@ -1,8 +1,8 @@
 repro:
-	python -m py_compile app.py
-	python -c "import app; print('pva-api flexible ok phi 9158.79')"
+	python3 -m unittest discover -s tests -v
+	python3 app.py
 
 reproduce: repro
 
 dev:
-	python app.py
+	python3 app.py --serve
